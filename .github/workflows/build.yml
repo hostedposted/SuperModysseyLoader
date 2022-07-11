@@ -3,7 +3,7 @@ name: Build Super Modyssey Loader
 on: [push]
 
 jobs:
-  Goldleaf:
+  build:
     runs-on: ubuntu-latest
 
     container: devkitpro/devkita64:latest
