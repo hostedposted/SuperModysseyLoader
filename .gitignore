@@ -1,0 +1,6 @@
+.vscode
+build
+*.nro
+*.nacp
+*.elf
+*.lst
