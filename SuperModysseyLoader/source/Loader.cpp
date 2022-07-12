@@ -90,8 +90,8 @@ Loader::Loader() : Layout::Layout() {
     this->Add(this->loadingBar);
 
     this->AddRenderCallback([&]() {
-        if (g_MainApplication->first_run) {
-            g_MainApplication->first_run = false;
+        g_MainApplication->renderCountLoader++;
+        if (g_MainApplication->renderCountLoader == 2) {
             loadConfig();
             this->LoadPage(1);
         };

@@ -3,7 +3,7 @@
 extern MainApplication::Ref g_MainApplication;
 
 void MainApplication::OnLoad() {
-    this->first_run = true;
+    this->renderCountLoader = 0;
     this->loaderLayout = Loader::New();
     this->LoadLayout(this->loaderLayout);
 

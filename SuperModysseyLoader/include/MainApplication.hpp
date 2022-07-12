@@ -12,7 +12,7 @@ class MainApplication : public pu::ui::Application {
         PU_SMART_CTOR(MainApplication)
 
         int page;
-        bool first_run;
+        int renderCountLoader;
         nlohmann::json mods;
         nlohmann::json enabledMods;
         ModSelect::Ref modSelectLayout;
